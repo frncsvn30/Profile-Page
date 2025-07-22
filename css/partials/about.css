@@ -24,7 +24,7 @@
   border: none;
   padding: 0.25rem;
   cursor: pointer;
-  color: var(--text-color);
+  color: var(--text-color-muted);
   transition: color 0.2s;
 }
 

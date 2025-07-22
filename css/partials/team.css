@@ -1,0 +1,75 @@
+@import url("../variables.css");
+
+.team-card {
+  background: var(--navbar-bg);
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  padding: var(--padding-section);
+  height: auto;
+}
+
+.team-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.team-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 24px;
+}
+
+.team-member {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.member-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.2s ease;
+}
+
+.member-info:hover .member-name {
+  text-decoration: underline;
+}
+
+
+.member-name {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.member-role {
+  font-size: 14px;
+  color: var(--text-color-muted);
+}
+
+.message-btn {
+  background: none;
+  border: none;
+  padding: 4px;
+  cursor: pointer;
+  color: var(--text-color-light);
+  font-size: 18px;
+  transition: color 0.2s ease;
+}
+
+.message-btn:hover {
+  color: var(--link-hover);
+}

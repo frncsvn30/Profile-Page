@@ -8,6 +8,7 @@
 @import url("../css/partials/about.css");
 @import url("../css/partials/techstacks.css");
 @import url("../css/partials/projects.css");
+@import url("../css/partials/team.css");
 
 
 /* nav and main structure format style */
@@ -114,6 +115,7 @@ main.main-container {
   margin: 1.25rem auto 0 auto;
   width: 100%;
   padding: 0 var(--padding-md);
+  padding-bottom: 30px;
 }
 
 .left-parent,
