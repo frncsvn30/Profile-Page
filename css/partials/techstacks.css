@@ -2,7 +2,7 @@
 
 .techstacks-card {
   background: var(--navbar-bg);
-  border-radius: 16px;
+  border-radius: 24px;
   overflow: hidden;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
   padding: var(--padding-section);
@@ -16,7 +16,7 @@
   margin-bottom: var(--padding-sm);
 }
 .card-header h2 {
-  font-size: 1rem;
+  font-size: 1.1rem;
   margin: 0;
   color: var(--text-color);
 }
@@ -41,7 +41,7 @@
 }
 
 .techstack-info {
-  margin-top: 14px;
+  margin-top: 24px;
 }
 .techstack-list {
   display: flex;

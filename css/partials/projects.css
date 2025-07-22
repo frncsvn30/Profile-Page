@@ -1,0 +1,108 @@
+@import url("../variables.css");
+
+.projects-card {
+  background: var(--navbar-bg);
+  border-radius: 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  padding: var(--padding-section);
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--padding-sm);
+}
+
+.project-header h2 {
+  font-size: 1.1rem;
+  margin: 0;
+  color: var(--text-color);
+}
+
+.project-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.project-actions button {
+  background: none;
+  border: none;
+  color: var(--text-color);
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.project-actions button:hover {
+  color: var(--accent-color);
+}
+
+.project-info {
+  margin-top: 1.5rem;
+  font-size: 0.875rem;
+}
+
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap, 1rem);
+}
+
+.project-item {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: var(--padding-md);
+  flex: 1 1 calc(50% - var(--gap, 1rem));
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  background-color: var(--navbar-bg);
+  min-width: 280px;
+}
+
+.project-item h4 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-color);
+}
+
+.project-item p {
+  margin: 0;
+  color: var(--text-light);
+  font-size: 0.85rem;
+}
+
+.project-item span {
+  align-self: flex-start;
+  background-color: var(--bg-color);
+  color: var(--text-color-light);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 4px 8px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin-top: auto;
+}
+
+.project-link {
+  text-decoration: none;
+  color: var(--text-color);
+  display: inline-block;
+}
+
+.project-link:hover h4 {
+  color: var(--link-hover);
+}
+
+.project-link i {
+  margin-left: 4px;
+  font-size: 0.9rem;
+}
+
+
+@media (max-width: 768px) {
+  .project-list {
+    flex-direction: column;
+  }
+}
