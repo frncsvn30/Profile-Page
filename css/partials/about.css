@@ -1,0 +1,10 @@
+@import url("../variables.css");
+
+.about-card {
+  background: var(--navbar-bg);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  padding: var(--padding-section);
+}
+

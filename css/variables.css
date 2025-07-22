@@ -1,22 +1,40 @@
 :root {
+  /* bgs & borders */
   --bg-color: #f4f4f4;
-  --text-color: #333;
   --navbar-bg: #ffffff;
-  --border: #eaeaea;
-  --input-placeholder: #888;
+  --border: #cccccc;
+
+  /* text colors */
+  --text-color: #111111;         /* standard dark text */
+  --text-color-muted: #333333;   /* secondary or metadata */
+  --text-color-light: #555555;   /* lighter text */
+  --text-color-white: #ffffff;   /* use only for dark backgrounds */
+
+  /* UI */
+  --input-placeholder: #888888;
   --link-hover: #0077ff;
 
+  /* spacing */
   --padding-sm: 0.6rem;
   --padding-md: 1rem;
   --padding-lg: 3rem;
-  --gap: 1.25rem; /* 20px = 1.25rem */
+  --padding-section: 24px;
+  --gap: 1.25rem; /* 20px */
 }
 
 .dark-mode {
-  --bg-color: #1e1e1e;
-  --text-color: #f5f5f5;
-  --navbar-bg: #2a2a2a;
-  --border: #444;
+  /* bgs & borders */
+  --bg-color: #000000;
+  --navbar-bg: #111111;
+  --border: #444444;
+
+  /* text colors */
+  --text-color: #f2f2f2;
+  --text-color-muted: #aaaaaa;
+  --text-color-light: #888888;
+  --text-color-white: #ffffff;
+
+  /* UI */
   --input-placeholder: #aaa;
   --link-hover: #5abfff;
 }

@@ -6,8 +6,6 @@
     <title>Profile Page</title>
 
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/darkMode.css">
-
 
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
@@ -41,23 +39,23 @@
 
     <main class="main-container">
         <section class="left-parent">
-            <article class="content">Left 1</article>
-            <article class="content">Left 2</article>
-            <article class="content">Left 3</article>
-            <article class="content">Left 4</article>
-            <article class="content">Left 5</article>
+            <section data-include="partials/profile.html" aria-label="Profile Section"></section>
+            <section data-include="partials/about.html" aria-label="About Section"></section>
+            <section data-include="partials/techstacks.html" aria-label="Tech Stacks Section"></section>
+            <section data-include="partials/projects.html" aria-label="Projects Section"></section>
+            <section data-include="partials/certification.html" aria-label="Certification Section"></section>
         </section>
         
         <aside class="right-parent">
-            <article class="content">Right 1</article>
-            <article class="content">Right 2</article>
-            <article class="content">Right 3</article>
-            <article class="content">Right 4</article>
+            <section class="content">Right 1</section>
+            <section class="content">Right 2</section>
+            <section class="content">Right 3</section>
+            <section class="content">Right 4</section>
         </aside>
     </main>
 
+    <script src="scripts/include.js"></script>
     <script src="scripts/darkMode.js"></script>
-
 </body>
 </html>
 

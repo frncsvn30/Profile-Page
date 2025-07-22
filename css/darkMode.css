@@ -1,0 +1,30 @@
+@import url("variables.css");
+
+/* dark-mode.css */
+body.dark-mode {
+  background-color: var(--bg-color);
+  color: #f0f0f0;
+}
+
+/* navbar */
+body.dark-mode nav {
+  background-color: var(--navbar-bg);
+}
+
+body.dark-mode .navbar-left input[type="text"] {
+  background-color: var(--navbar-bg);
+  border-color: var(--border);
+  color: #f0f0f0;
+}
+
+body.dark-mode .navbar-left input[type="text"]::placeholder {
+  color: #aaa;
+}
+
+body.dark-mode .navbar-right .flex {
+  color: #f0f0f0;
+}
+
+body.dark-mode .navbar-right .flex:hover {
+  color: #66aaff;
+}

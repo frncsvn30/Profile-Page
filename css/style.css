@@ -1,5 +1,14 @@
 @import url("variables.css");
 
+/* darkmode */
+@import url("../css/darkMode.css");
+
+/* partials */
+@import url("../css/partials/profile.css");
+@import url("../css/partials/about.css");
+
+
+/* nav and main structure format style */
 * {
   margin: 0;
   padding: 0;
@@ -14,6 +23,9 @@ body {
 
 /* navbar */
 nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
   background-color: var(--navbar-bg);
   padding: var(--padding-sm) 0;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03);
@@ -98,8 +110,8 @@ main.main-container {
   gap: 0.625rem;
 }
 
-.content {
-  padding: var(--padding-md);
+.left-parent section,
+.right-parent section {
   background-color: #fff;
   border-radius: 1.5rem;
 }
