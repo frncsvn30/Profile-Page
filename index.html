@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/darkMode.css">
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="navbar-container">
+            <div class="navbar-left">
+                <a href="#" class="logo">
+                    <img src="assets/images/qstrike-logo.png" alt="Qstrike Logo" />
+                </a>
+                <input type="text" placeholder="Search..." />
+            </div>
+
+            <div class="navbar-right">
+                <a href="#home" class="flex">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                    </svg>
+                    Home
+                </a>
+                <a href="#logout" class="flex">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 9V5.25A2.25 2.25 0 0 0 13.5 3h-6a2.25 2.25 0 0 0-2.25 2.25v13.5A2.25 2.25 0 0 0 7.5 21h6a2.25 2.25 0 0 0 2.25-2.25V15m3 0 3-3m0 0-3-3m3 3H9" />
+                    </svg>
+                    Logout
+                </a>
+                <button id="darkModeToggle" class="dark-mode-btn">🌙</button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-container">
+        <section class="left-parent">
+            <article class="content">Left 1</article>
+            <article class="content">Left 2</article>
+            <article class="content">Left 3</article>
+            <article class="content">Left 4</article>
+            <article class="content">Left 5</article>
+        </section>
+        
+        <aside class="right-parent">
+            <article class="content">Right 1</article>
+            <article class="content">Right 2</article>
+            <article class="content">Right 3</article>
+            <article class="content">Right 4</article>
+        </aside>
+    </main>
+
+    <script src="scripts/darkMode.js"></script>
+
+</body>
+</html>
+
