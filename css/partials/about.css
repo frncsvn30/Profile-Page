@@ -6,6 +6,7 @@
   overflow: hidden;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
   padding: var(--padding-section);
+  animation: slideUp 0.6s ease-out;
 }
 
 .about-header {
@@ -36,7 +37,7 @@
 .about-info {
   margin-top: 14px;
   font-size: 14px;
-  color: var(--text-color-light);
+  color: var(--text-color-muted);
   display: flex;
   flex-direction: column;
   gap: var(--gap);

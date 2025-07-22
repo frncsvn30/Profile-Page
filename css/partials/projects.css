@@ -5,6 +5,7 @@
   border-radius: 24px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
   padding: var(--padding-section);
+  animation: slideUp 0.6s ease-out;
 }
 
 .project-header {
@@ -71,14 +72,14 @@
 
 .project-item p {
   margin: 0;
-  color: var(--text-light);
+  color: var(--text-color-muted);
   font-size: 0.85rem;
 }
 
 .project-item span {
   align-self: flex-start;
   background-color: var(--bg-color);
-  color: var(--text-color-light);
+  color: var(--text-color-muted);
   border: 1px solid var(--border);
   border-radius: 4px;
   padding: 4px 8px;
@@ -108,3 +109,4 @@
     flex-direction: column;
   }
 }
+

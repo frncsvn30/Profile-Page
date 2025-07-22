@@ -11,6 +11,17 @@
 @import url("../css/partials/team.css");
 @import url("../css/partials/addDetails.css");
 
+/* animation for card entrance */
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
 /* nav and main structure format style */
 * {
@@ -21,10 +32,9 @@
 }
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   color: var(--text-color);
   background-color: var(--bg-color);
-  
 }
 
 /* navbar */
@@ -71,19 +81,18 @@ nav {
   padding: 0.3rem 1rem;
   border: 1px solid var(--border);
   border-radius: 999px;
-  font-size: .8rem;
-  font-family: 'Inter', sans-serif;
-  height: 2rem;           
-  line-height: 2rem;      
-  box-sizing: border-box;   
+  font-size: 0.8rem;
+  font-family: "Inter", sans-serif;
+  height: 2rem;
+  line-height: 2rem;
+  box-sizing: border-box;
 }
 
 .navbar-left input[type="text"]::placeholder {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   color: var(--input-placeholder);
   font-size: 0.8rem;
 }
-
 
 .navbar-right {
   display: flex;
@@ -98,7 +107,7 @@ nav {
   text-decoration: none;
   color: var(--text-color-muted);
   font-weight: 500;
-  font-size: .85rem;
+  font-size: 0.85rem;
 }
 
 /* .navbar-right i {
