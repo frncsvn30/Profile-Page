@@ -8,3 +8,11 @@
   padding: var(--padding-section);
 }
 
+.about-info {
+    margin-top: 14px;
+    font-size: 14px;
+    color: var(--text-color-light);
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap);
+}

@@ -29,10 +29,10 @@
   --border: #444444;
 
   /* text colors */
-  --text-color: #f2f2f2;
-  --text-color-muted: #aaaaaa;
-  --text-color-light: #888888;
-  --text-color-white: #ffffff;
+  --text-color: #f0f0f0;         /* primary text – very light gray */
+  --text-color-muted: #d9d9d9;   /* secondary text – slightly dimmer */
+  --text-color-light: #cccccc;   /* metadata or hints – dimmer still */
+  --text-color-white: #ffffff; 
 
   /* UI */
   --input-placeholder: #aaa;
