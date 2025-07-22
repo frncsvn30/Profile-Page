@@ -1,9 +1,48 @@
 @import url("variables.css");
 
-/* dark-mode.css */
-body.dark-mode {
+/* toggle */
+#darkModeToggle {
+  position: relative;
+  width: 50px;
+  height: 26px;
+  border-radius: 15px;
   background-color: var(--bg-color);
-  color: #f0f0f0;
+  border: 1px solid var(--border);
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s ease;
+  font-size: 0;
+}
+
+#darkModeToggle::before {
+  content: "☀️";
+  position: absolute;
+  top: 50%;
+  left: 3px;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: white;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  transition: left 0.3s ease, background-color 0.3s ease, content 0.3s ease,
+    color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-mode #darkModeToggle {
+  background-color: #333;
+}
+
+body.dark-mode #darkModeToggle::before {
+  left: 27px;
+  content: "🌙";
+  background-color: black;
+  color: var(--text-color-white);
 }
 
 /* navbar */
