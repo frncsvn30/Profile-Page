@@ -1,68 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Profile</title>
 
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />
     <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
     />
-
-
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
     <header>
-        <nav>
-            <div class="navbar-container">
-                <div class="navbar-left">
-                    <a href="#" class="logo-link">
-                        <img src="./assets/images/qstrike-logo.png" alt="Qstrike Logo Light" class="logo logo-light" />
-                        <img src="./assets/images/Qstrike logo dark.png" alt="Qstrike Logo Dark" class="logo logo-dark" />
-                    </a>
-                    <input type="text" placeholder="Search..." />
-                </div>
+      <nav>
+        <div class="navbar-container">
+          <div class="navbar-left">
+            <a href="#" class="logo-link">
+              <img
+                src="./assets/images/qstrike-logo.png"
+                alt="Qstrike Logo Light"
+                class="logo logo-light"
+              />
+              <img
+                src="./assets/images/Qstrike logo dark.png"
+                alt="Qstrike Logo Dark"
+                class="logo logo-dark"
+              />
+            </a>
+            <input type="text" placeholder="Search..." />
+          </div>
 
-                <div class="navbar-right">
-                    <a href="#home" class="flex">
-                        <i class="fas fa-house"></i>
-                        Home
-                    </a>
-                    <a href="#logout" class="flex">
-                        <i class="fas fa-right-from-bracket"></i>
-                        Logout
-                    </a>
-                    <button id="darkModeToggle" class="dark-mode-btn">
-                        <i class="fas fa-moon"></i>
-                    </button>
-                </div>
-            </div>
-        </nav>
+          <div class="navbar-right">
+            <a href="#home" class="flex">
+              <i class="fas fa-house"></i>
+              Home
+            </a>
+            <a href="#logout" class="flex">
+              <i class="fas fa-right-from-bracket"></i>
+              Logout
+            </a>
+            <button id="darkModeToggle" class="dark-mode-btn">
+              <i class="fas fa-moon"></i>
+            </button>
+          </div>
+        </div>
+      </nav>
     </header>
-    
+
     <main class="main-container">
-        <section class="left-parent">
-            <section data-include="partials/profile.html" aria-label="Profile Section"></section>
-            <section data-include="partials/about.html" aria-label="About Section"></section>
-            <section data-include="partials/techstacks.html" aria-label="Tech Stacks Section"></section>
-            <section data-include="partials/projects.html" aria-label="Projects Section"></section>
-            <section data-include="partials/certification.html" aria-label="Certification Section"></section>
-        </section>
-        
-        <aside class="right-parent">
-            <section data-include="partials/performance.html" aria-label="Profile Section"></section>
-            <section data-include="partials/engagement.html" aria-label="Profile Section"></section>
-            <section data-include="partials/team.html" aria-label="Profile Section"></section>
-            <section data-include="partials/addDetails.html" aria-label="Profile Section"></section>
-        </aside>
+      <section class="left-parent">
+        <section
+          data-include="partials/profile.html"
+          aria-label="Profile Section"
+        ></section>
+        <section
+          data-include="partials/about.html"
+          aria-label="About Section"
+        ></section>
+        <section
+          data-include="partials/techstacks.html"
+          aria-label="Tech Stacks Section"
+        ></section>
+        <section
+          data-include="partials/projects.html"
+          aria-label="Projects Section"
+        ></section>
+        <section
+          data-include="partials/certification.html"
+          aria-label="Certification Section"
+        ></section>
+      </section>
+
+      <aside class="right-parent">
+        <section
+          data-include="partials/performance.html"
+          aria-label="Profile Section"
+        ></section>
+        <section
+          data-include="partials/engagement.html"
+          aria-label="Profile Section"
+        ></section>
+        <section
+          data-include="partials/team.html"
+          aria-label="Profile Section"
+        ></section>
+        <section
+          data-include="partials/addDetails.html"
+          aria-label="Profile Section"
+        ></section>
+      </aside>
     </main>
 
     <script src="scripts/include.js"></script>
     <script src="scripts/darkMode.js"></script>
     <script src="scripts/normalize.js"></script>
-</body>
+  </body>
 </html>
-

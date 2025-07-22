@@ -103,10 +103,8 @@
   font-size: 0.9rem;
 }
 
-
 @media (max-width: 768px) {
   .project-list {
     flex-direction: column;
   }
 }
-

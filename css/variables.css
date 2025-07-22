@@ -5,10 +5,10 @@
   --border: #cccccc;
 
   /* text colors */
-  --text-color: #111111;       
-  --text-color-muted: #333333;   
-  --text-color-light: #555555;   
-  --text-color-white: #ffffff;  
+  --text-color: #111111;
+  --text-color-muted: #333333;
+  --text-color-light: #555555;
+  --text-color-white: #ffffff;
 
   /* UI */
   --input-placeholder: #888888;
@@ -29,10 +29,10 @@
   --border: #444444;
 
   /* text colors */
-  --text-color: #f0f0f0;         /* primary text – very light gray */
-  --text-color-muted: #d9d9d9;   /* secondary text – slightly dimmer */
-  --text-color-light: #cccccc;   /* metadata or hints – dimmer still */
-  --text-color-white: #000000; 
+  --text-color: #f0f0f0;
+  --text-color-muted: #d9d9d9;
+  --text-color-light: #cccccc;
+  --text-color-white: #000000;
 
   /* UI */
   --input-placeholder: #aaa;

@@ -15,9 +15,9 @@
 }
 
 .about-header h2 {
-    font-size: 1.1rem;
-    margin: 0;
-    color: var(--text-color);
+  font-size: 1.1rem;
+  margin: 0;
+  color: var(--text-color);
 }
 
 .about-header button {
