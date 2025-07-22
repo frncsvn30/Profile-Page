@@ -62,6 +62,10 @@ nav {
   width: auto;
 }
 
+.logo-dark {
+  display: none;
+}
+
 .navbar-left input[type="text"] {
   padding: 0.3rem 1rem;
   border: 1px solid var(--border);
@@ -122,7 +126,7 @@ main.main-container {
 .right-parent {
   display: flex;
   flex-direction: column;
-  gap: 0.625rem;
+  gap: var(--gap);
 }
 
 /* responsive */

@@ -11,6 +11,18 @@ body.dark-mode nav {
   background-color: var(--navbar-bg);
 }
 
+body.dark-mode .logo {
+  content: url("../assets/images/Qstrike logo dark.png");
+}
+
+body.dark-mode .logo-light {
+  display: none;
+}
+
+body.dark-mode .logo-dark {
+  display: inline;
+}
+
 body.dark-mode .navbar-left input[type="text"] {
   background-color: var(--navbar-bg);
   border-color: var(--border);
