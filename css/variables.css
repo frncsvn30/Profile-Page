@@ -5,10 +5,10 @@
   --border: #cccccc;
 
   /* text colors */
-  --text-color: #111111;         /* standard dark text */
-  --text-color-muted: #333333;   /* secondary or metadata */
-  --text-color-light: #555555;   /* lighter text */
-  --text-color-white: #ffffff;   /* use only for dark backgrounds */
+  --text-color: #111111;       
+  --text-color-muted: #333333;   
+  --text-color-light: #555555;   
+  --text-color-white: #ffffff;  
 
   /* UI */
   --input-placeholder: #888888;

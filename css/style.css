@@ -6,6 +6,7 @@
 /* partials */
 @import url("../css/partials/profile.css");
 @import url("../css/partials/about.css");
+@import url("../css/partials/techstacks.css");
 
 
 /* nav and main structure format style */
@@ -13,22 +14,28 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  transition: background-color 0.4s ease, color 0.4s ease;
 }
 
 body {
   font-family: 'Inter', sans-serif;
   color: var(--text-color);
   background-color: var(--bg-color);
+  
 }
 
 /* navbar */
-nav {
+header {
   position: sticky;
   top: 0;
   z-index: 1000;
   background-color: var(--navbar-bg);
-  padding: var(--padding-sm) 0;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03);
+}
+
+nav {
+  position: static;
+  padding: 6px 0;
 }
 
 .navbar-container {
@@ -54,18 +61,22 @@ nav {
 }
 
 .navbar-left input[type="text"] {
-  padding: 0.5rem 1rem;
+  padding: 0.3rem 1rem;
   border: 1px solid var(--border);
   border-radius: 999px;
-  font-size: 1rem;
+  font-size: .8rem;
   font-family: 'Inter', sans-serif;
+  height: 2rem;           
+  line-height: 2rem;      
+  box-sizing: border-box;   
 }
 
 .navbar-left input[type="text"]::placeholder {
   font-family: 'Inter', sans-serif;
   color: var(--input-placeholder);
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
+
 
 .navbar-right {
   display: flex;
@@ -78,15 +89,16 @@ nav {
   align-items: center;
   gap: 0.375rem;
   text-decoration: none;
-  color: var(--text-color);
+  color: var(--text-color-muted);
   font-weight: 500;
-  font-size: 1rem;
+  font-size: .85rem;
 }
 
-.navbar-right svg {
-  width: 1.5rem;
-  height: 1.5rem;
-}
+/* .navbar-right i {
+  font-size: .85rem;
+  line-height: 1;
+  color: var(--text-color-muted);
+} */
 
 .navbar-right .flex:hover {
   color: var(--link-hover);
@@ -108,12 +120,6 @@ main.main-container {
   display: flex;
   flex-direction: column;
   gap: 0.625rem;
-}
-
-.left-parent section,
-.right-parent section {
-  background-color: #fff;
-  border-radius: 1.5rem;
 }
 
 /* responsive */

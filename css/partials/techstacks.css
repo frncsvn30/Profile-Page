@@ -1,0 +1,60 @@
+@import url("../variables.css");
+
+.techstacks-card {
+  background: var(--navbar-bg);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  padding: var(--padding-section);
+  height: auto;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--padding-sm);
+}
+.card-header h2 {
+  font-size: 1rem;
+  margin: 0;
+  color: var(--text-color);
+}
+.card-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+.card-actions button {
+  background: none;
+  border: none;
+  padding: 0.25rem;
+  cursor: pointer;
+  color: var(--text-color);
+  transition: color 0.2s;
+}
+.card-actions button:hover {
+  color: var(--accent-color);
+}
+.card-actions .icon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.techstack-info {
+  margin-top: 14px;
+}
+.techstack-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.techstack-list span {
+  background-color: var(--bg-color);
+  color: var(--text-color-light);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 4px 8px;
+  font-size: 0.8rem;
+  white-space: nowrap;
+  transition: background 0.3s ease, color 0.3s ease;
+}

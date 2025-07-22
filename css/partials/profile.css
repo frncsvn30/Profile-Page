@@ -36,7 +36,6 @@
   left: 20px;
 }
 
-
 .info {
   margin-top: 50px;
   flex: 1;
@@ -89,7 +88,6 @@
   color: var(--text-color-white);
   border: none;
 }
-
 
 /* mobile reponsive */
 @media (max-width: 768px) {
