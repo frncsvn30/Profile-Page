@@ -81,14 +81,28 @@
   font-size: 14px;
   border-radius: 6px;
   border: 1px solid var(--border);
-  background: transparent;
+  background: var(--default-base);
   color: var(--text-color);
   cursor: pointer;
+  font-weight: 500;
+}
+.btn:hover {
+  background: var(--default-hovered);
+}
+.btn:active {
+  background: var(--default-pressed);
 }
 .btn.black {
-  background: var(--text-color);
+  background: var(--primary-base);
   color: var(--text-color-white);
   border: none;
+  font-weight: 500;
+}
+.btn.black:hover {
+  background-color: var(--primary-hovered);
+}
+.btn.black:active {
+  background-color: var(--primary-pressed);
 }
 
 /* mobile reponsive */

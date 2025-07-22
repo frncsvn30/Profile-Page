@@ -20,6 +20,15 @@
   --padding-lg: 3rem;
   --padding-section: 24px;
   --gap: 1.25rem; /* 20px */
+
+  /* button */
+  --default-base: transparent;
+  --default-hovered: #f5f5f5;
+  --default-pressed-bg: #e6e6e6;
+
+  --primary-base: #1A1A1A;
+  --primary-hovered: #262626;
+  --primary-pressed: #121212;
 }
 
 .dark-mode {
@@ -37,4 +46,13 @@
   /* UI */
   --input-placeholder: #aaa;
   --link-hover: #5abfff;
+
+  /* button */
+  --default-base: transparent;
+  --default-hovered: #2a2a2a;
+  --default-pressed-bg: #1a1a1a;
+
+  --primary-base: #F5F5F5;    
+  --primary-hovered: #E0E0E0;          
+  --primary-pressed: #CCCCCC;          
 }
