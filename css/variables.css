@@ -32,7 +32,7 @@
   --text-color: #f0f0f0;         /* primary text – very light gray */
   --text-color-muted: #d9d9d9;   /* secondary text – slightly dimmer */
   --text-color-light: #cccccc;   /* metadata or hints – dimmer still */
-  --text-color-white: #ffffff; 
+  --text-color-white: #000000; 
 
   /* UI */
   --input-placeholder: #aaa;

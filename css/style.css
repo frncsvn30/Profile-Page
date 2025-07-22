@@ -10,6 +10,7 @@
 @import url("../css/partials/projects.css");
 @import url("../css/partials/team.css");
 @import url("../css/partials/addDetails.css");
+@import url("../css/partials/performance.css");
 
 /* animation for card entrance */
 @keyframes slideUp {
@@ -28,7 +29,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  transition: background-color 0.4s ease, color 0.4s ease;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 body {

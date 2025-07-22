@@ -95,7 +95,7 @@
 }
 
 .detail-value {
-  font-size: 1rem;
+  font-size: 14px;
   font-weight: 500;
   color: var(--text-color);
   line-height: 1.4;

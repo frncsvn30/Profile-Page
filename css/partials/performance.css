@@ -1,0 +1,123 @@
+@import url("variables.css");
+
+.performance-card {
+  background: var(--navbar-bg);
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  padding: var(--padding-section);
+  animation: slideUp 0.6s ease-out;
+}
+
+.performance-card h2 {
+  font-size: 1.1rem;
+  margin: 0;
+  color: var(--text-color);
+}
+
+.chart-container {
+  display: flex;
+  justify-content: center;
+  margin: 2rem;
+}
+
+@media (max-width: 480px) {
+  .chart-container {
+    margin: 1rem;
+  }
+}
+
+/* radial donut */
+.radial-chart {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+
+  background: conic-gradient(
+    #2563EB 0% calc(var(--p1) * 1% - 0.01%),
+    #F59E0B calc(var(--p1) * 1%) calc(calc(var(--p1) + var(--p2)) * 1% - 0.01%),
+    #14B8A6 calc(calc(var(--p1) + var(--p2)) * 1%) calc(calc(var(--p1) + var(--p2) + var(--p3)) * 1% - 0.01%),
+    var(--navbar-bg) calc(calc(var(--p1) + var(--p2) + var(--p3)) * 1%) 100%
+  );
+}
+
+/* donut hole mask */
+.radial-chart::after {
+  content: "";
+  position: absolute;
+  top: 22px;
+  left: 22px;
+  right: 22px;
+  bottom: 22px;
+  background: var(--navbar-bg);
+  border-radius: 50%;
+  z-index: 1;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .radial-chart {
+    width: 150px;
+    height: 150px;
+    padding: 15px;
+  }
+  .radial-chart::after {
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .radial-chart {
+    width: 120px;
+    height: 120px;
+    padding: 12px;
+  }
+  .radial-chart::after {
+    top: 12px;
+    left: 12px;
+    right: 12px;
+    bottom: 12px;
+  }
+}
+
+.legend {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 14px;
+}
+
+.legend-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.dot-blue {
+  background-color: #2563EB;
+}
+
+.dot-orange {
+  background-color: #F59E0B;
+}
+
+.dot-teal {
+  background-color: #14B8A6;
+}
+
+.percent {
+  margin-left: auto;
+  font-weight: bold;
+  color: var(--text-color);
+}
