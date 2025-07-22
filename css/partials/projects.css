@@ -32,10 +32,11 @@
   cursor: pointer;
   color: var(--text-color-muted);
   transition: color 0.2s;
+  font-size: 1rem;
 }
 
 .project-actions button:hover {
-  color: var(--accent-color);
+  color: var(--link-hover);
 }
 
 .project-info {
