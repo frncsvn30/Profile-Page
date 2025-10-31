@@ -1,0 +1,145 @@
+@import url("../variables.css");
+
+.profile-card {
+  background: var(--navbar-bg);
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  animation: slideUp 0.6s ease-out;
+}
+
+.cover {
+  padding: var(--padding-sm);
+}
+.cover-photo {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  display: block;
+  border-radius: 16px;
+}
+
+.profile-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  padding: var(--padding-section);
+  position: relative;
+}
+.profile-img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 4px solid var(--navbar-bg);
+  transition: border 0.3s ease, color 0.3s ease;
+  object-fit: cover;
+  position: absolute;
+  top: -80px;
+  left: 20px;
+}
+
+.info {
+  margin-top: 50px;
+  flex: 1;
+}
+
+.info h2 {
+  margin: 0;
+  font-size: 22px;
+  font-weight: bold;
+  color: var(--text-color);
+}
+
+.title {
+  font-size: 16px;
+  margin-top: 4px;
+  color: var(--text-color-muted);
+}
+
+.bio {
+  font-size: 14px;
+  margin: 14px 0;
+  color: var(--text-color-muted);
+}
+
+.stats {
+  display: flex;
+  gap: var(--gap);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-color);
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+  margin-left: auto;
+  margin-top: -15px;
+}
+.btn {
+  padding: 8px 16px;
+  font-size: 14px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background: var(--default-base);
+  color: var(--text-color);
+  cursor: pointer;
+  font-weight: 500;
+}
+.btn:hover {
+  background: var(--default-hovered);
+}
+.btn:active {
+  background: var(--default-pressed);
+}
+.btn.black {
+  background: var(--primary-base);
+  color: var(--text-color-white);
+  border: none;
+  font-weight: 500;
+}
+.btn.black:hover {
+  background-color: var(--primary-hovered);
+}
+.btn.black:active {
+  background-color: var(--primary-pressed);
+}
+
+/* mobile reponsive */
+@media (max-width: 768px) {
+  .profile-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 80px;
+  }
+  .profile-img {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .cover-photo {
+    height: 150px;
+  }
+
+  .info {
+    margin: 0;
+    width: 80%;
+  }
+
+  .stats {
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .buttons {
+    justify-content: center;
+    align-items: center;
+    margin: 16px 0 0;
+    width: 100%;
+  }
+  .buttons .btn {
+    width: 100%;
+    padding: 10px 16px;
+  }
+}

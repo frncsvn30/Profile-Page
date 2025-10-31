@@ -1,0 +1,58 @@
+:root {
+  /* bgs & borders */
+  --bg-color: #f4f4f4;
+  --navbar-bg: #ffffff;
+  --border: #cccccc;
+
+  /* text colors */
+  --text-color: #111111;
+  --text-color-muted: #333333;
+  --text-color-light: #555555;
+  --text-color-white: #ffffff;
+
+  /* UI */
+  --input-placeholder: #888888;
+  --link-hover: #0077ff;
+
+  /* spacing */
+  --padding-sm: 0.5rem;
+  --padding-md: 1rem;
+  --padding-lg: 3rem;
+  --padding-section: 24px;
+  --gap: 1.25rem; /* 20px */
+
+  /* button */
+  --default-base: transparent;
+  --default-hovered: #f5f5f5;
+  --default-pressed-bg: #e6e6e6;
+
+  --primary-base: #1A1A1A;
+  --primary-hovered: #262626;
+  --primary-pressed: #121212;
+}
+
+.dark-mode {
+  /* bgs & borders */
+  --bg-color: #000000;
+  --navbar-bg: #111111;
+  --border: #444444;
+
+  /* text colors */
+  --text-color: #f0f0f0;
+  --text-color-muted: #d9d9d9;
+  --text-color-light: #cccccc;
+  --text-color-white: #000000;
+
+  /* UI */
+  --input-placeholder: #aaa;
+  --link-hover: #5abfff;
+
+  /* button */
+  --default-base: transparent;
+  --default-hovered: #2a2a2a;
+  --default-pressed-bg: #1a1a1a;
+
+  --primary-base: #F5F5F5;    
+  --primary-hovered: #E0E0E0;          
+  --primary-pressed: #CCCCCC;          
+}
